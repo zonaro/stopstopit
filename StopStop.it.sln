@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopStop.it", "StopStop.it\StopStop.it.csproj", "{88AD7409-9362-4FCB-926D-A45A0165E857}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StopstopIt", "StopstopIt\StopstopIt.csproj", "{565F9E72-A641-4C4A-80B0-D374B55B0B18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{88AD7409-9362-4FCB-926D-A45A0165E857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{88AD7409-9362-4FCB-926D-A45A0165E857}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{88AD7409-9362-4FCB-926D-A45A0165E857}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{88AD7409-9362-4FCB-926D-A45A0165E857}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565F9E72-A641-4C4A-80B0-D374B55B0B18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565F9E72-A641-4C4A-80B0-D374B55B0B18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565F9E72-A641-4C4A-80B0-D374B55B0B18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565F9E72-A641-4C4A-80B0-D374B55B0B18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

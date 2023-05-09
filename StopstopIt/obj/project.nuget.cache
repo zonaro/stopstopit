@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hyYYXXww+y66v36ByI8kHrtiAMvAeDoipLmGyDpYNZDlv9zk+DLeJdk8BjUWaWdUUN9igmCLPbr+oF0M+BzOFQ==",
+  "success": true,
+  "projectFilePath": "C:\\svn\\stopstopit\\StopstopIt\\StopstopIt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\H&S\\.nuget\\packages\\microsoft.web.webview2\\1.0.1774.30\\microsoft.web.webview2.1.0.1774.30.nupkg.sha512"
+  ],
+  "logs": []
+}
