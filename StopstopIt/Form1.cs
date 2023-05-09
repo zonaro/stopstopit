@@ -60,7 +60,8 @@ namespace StopstopIt
         private void Form1_Load(object sender, EventArgs e)
         {
             notifyIcon1.Visible = true;
-            webBrowser1.ScriptErrorsSuppressed = true;
+            webView21.CoreWebView2.Navigate("https://runrun.it/pt-BR/user_session/new");
+
             timer1.Enabled = true;
             SystemEvents.SessionSwitch += SystemEvents_SessionSwitch;
         }
@@ -115,9 +116,11 @@ namespace StopstopIt
 
         private void trypause()
         {
-            if (webBrowser1.Url.ToString() != "https://runrun.it/pt-BR/me/tasks")
+            if (webView21..Url.ToString() != "https://runrun.it/pt-BR/me/tasks")
             {
-                webBrowser1.Navigate("https://runrun.it/pt-BR/me/tasks");
+                webView21.CoreWebView2.Navigate("https://runrun.it/pt-BR/me/tasks");
+
+                webBrowser1.Navigate();
                 while (webBrowser1.ReadyState != WebBrowserReadyState.Complete)
                 {
                     Application.DoEvents();
