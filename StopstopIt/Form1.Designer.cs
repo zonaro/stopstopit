@@ -44,6 +44,8 @@
             toolStripSeparator2 = new ToolStripSeparator();
             sairToolStripMenuItem = new ToolStripMenuItem();
             webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            toolStripSeparator3 = new ToolStripSeparator();
             contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             SuspendLayout();
@@ -64,9 +66,9 @@
             // 
             // contextMenuStrip1
             // 
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { abrirFormulárioToolStripMenuItem, lockme, winstart, toolStripSeparator1, d1, d3, d5, d10, toolStripSeparator2, sairToolStripMenuItem });
+            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripSeparator3, abrirFormulárioToolStripMenuItem, lockme, winstart, toolStripSeparator1, d1, d3, d5, d10, toolStripSeparator2, sairToolStripMenuItem });
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(232, 192);
+            contextMenuStrip1.Size = new Size(232, 242);
             // 
             // abrirFormulárioToolStripMenuItem
             // 
@@ -155,6 +157,18 @@
             webView21.TabIndex = 1;
             webView21.ZoomFactor = 1D;
             // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(231, 22);
+            toolStripMenuItem1.Text = "Pausar Agora";
+            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(228, 6);
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -188,6 +202,8 @@
         private System.Windows.Forms.ToolStripMenuItem lockme;
         private System.Windows.Forms.ToolStripMenuItem winstart;
         private Microsoft.Web.WebView2.WinForms.WebView2 webView21;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripSeparator toolStripSeparator3;
     }
 }
 
