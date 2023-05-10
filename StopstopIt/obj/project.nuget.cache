@@ -1,10 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "hyYYXXww+y66v36ByI8kHrtiAMvAeDoipLmGyDpYNZDlv9zk+DLeJdk8BjUWaWdUUN9igmCLPbr+oF0M+BzOFQ==",
+  "dgSpecHash": "8vdKSY6iiul/WTlF+aXE3OLGasPIIyxj9TSrWnpbF+Waac9syEa6XG0nemIXceR15kRxDWB4I1+5iVfX1VuC9Q==",
   "success": true,
-  "projectFilePath": "C:\\svn\\stopstopit\\StopstopIt\\StopstopIt.csproj",
+  "projectFilePath": "D:\\SVN\\stopstopit\\StopstopIt\\StopstopIt.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\H&S\\.nuget\\packages\\microsoft.web.webview2\\1.0.1774.30\\microsoft.web.webview2.1.0.1774.30.nupkg.sha512"
+    "C:\\Users\\zonar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\microsoft.extensions.logging\\2.0.2\\microsoft.extensions.logging.2.0.2.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.2\\microsoft.extensions.logging.abstractions.2.0.2.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\microsoft.extensions.options\\2.0.2\\microsoft.extensions.options.2.0.2.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\microsoft.extensions.primitives\\2.0.0\\microsoft.extensions.primitives.2.0.0.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\microsoft.web.webview2\\1.0.1774.30\\microsoft.web.webview2.1.0.1774.30.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\microsoft.web.webview2.devtoolsprotocolextension\\1.0.824\\microsoft.web.webview2.devtoolsprotocolextension.1.0.824.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.4.0\\system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
+    "C:\\Users\\zonar\\.nuget\\packages\\webview2.devtools.dom\\3.0.1\\webview2.devtools.dom.3.0.1.nupkg.sha512"
   ],
   "logs": []
 }

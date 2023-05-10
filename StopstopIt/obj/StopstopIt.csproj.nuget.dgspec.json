@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\svn\\stopstopit\\StopstopIt\\StopstopIt.csproj": {}
+    "D:\\SVN\\stopstopit\\StopstopIt\\StopstopIt.csproj": {}
   },
   "projects": {
-    "C:\\svn\\stopstopit\\StopstopIt\\StopstopIt.csproj": {
+    "D:\\SVN\\stopstopit\\StopstopIt\\StopstopIt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\svn\\stopstopit\\StopstopIt\\StopstopIt.csproj",
+        "projectUniqueName": "D:\\SVN\\stopstopit\\StopstopIt\\StopstopIt.csproj",
         "projectName": "StopstopIt",
-        "projectPath": "C:\\svn\\stopstopit\\StopstopIt\\StopstopIt.csproj",
-        "packagesPath": "C:\\Users\\H&S\\.nuget\\packages\\",
-        "outputPath": "C:\\svn\\stopstopit\\StopstopIt\\obj\\",
+        "projectPath": "D:\\SVN\\stopstopit\\StopstopIt\\StopstopIt.csproj",
+        "packagesPath": "C:\\Users\\zonar\\.nuget\\packages\\",
+        "outputPath": "D:\\SVN\\stopstopit\\StopstopIt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\H&S\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\zonar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -48,6 +48,10 @@
             "Microsoft.Web.WebView2": {
               "target": "Package",
               "version": "[1.0.1774.30, )"
+            },
+            "WebView2.DevTools.Dom": {
+              "target": "Package",
+              "version": "[3.0.1, )"
             }
           },
           "imports": [

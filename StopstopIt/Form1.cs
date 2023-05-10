@@ -9,11 +9,24 @@ namespace StopstopIt
     {
         #region Private Fields
 
-        private string linkPath = Environment.GetFolderPath(Environment.SpecialFolder.Startup) + "\\StopStop.it.url";
+        private string linkPath = $"{Environment.GetFolderPath(Environment.SpecialFolder.Startup)}\\StopStop.it.url";
 
         #endregion Private Fields
 
-        #region Private Methods
+        public int LastTask = 0;
+
+        public int minutos = 3;
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        public int idleTime { get; set; } = 0;
+
+        public bool IsOnPC => idleTime <= (60 * minutos);
+
+        public bool IsRunRunPaused { get; set; } = true;
 
         [DllImport("user32.dll")]
         private static extern bool GetLastInputInfo(out LASTINPUTINFO plii);
@@ -141,9 +154,7 @@ namespace StopstopIt
                 if (i != null)
                 {
                     return bt;
-
                 }
-
             }
             return null;
         }
@@ -153,14 +164,19 @@ namespace StopstopIt
             if (System.IO.File.Exists(linkPath)) { System.IO.File.Delete(linkPath); }
         }
 
+        private void sair()
+        {
+            SystemEvents.SessionSwitch -= SystemEvents_SessionSwitch;
+            Application.Exit();
+            System.Environment.Exit(1);
+        }
+
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             trypause();
             if (IsRunRunPaused)
             {
-                SystemEvents.SessionSwitch -= SystemEvents_SessionSwitch;
-                Application.Exit();
-                System.Environment.Exit(1);
+                sair();
             }
         }
 
@@ -180,7 +196,7 @@ namespace StopstopIt
                 idleTime = envTicks - lastInputTick;
             }
 
-            idleTime = idleTime / 1000;
+            idleTime /= 1000;
 
             OnIdle();
         }
@@ -221,54 +237,6 @@ namespace StopstopIt
             winstart.Checked = System.IO.File.Exists(linkPath);
         }
 
-        #endregion Private Methods
-
-        #region Private Structs
-
-        [StructLayout(LayoutKind.Sequential)]
-        private struct LASTINPUTINFO
-        {
-            public static readonly int SizeOf =
-                   Marshal.SizeOf(typeof(LASTINPUTINFO));
-
-            [MarshalAs(UnmanagedType.U4)]
-            public int cbSize;
-
-            [MarshalAs(UnmanagedType.U4)]
-            public int dwTime;
-        }
-
-        #endregion Private Structs
-
-        #region Public Fields
-
-        public int LastTask = 0;
-
-        public int minutos = 3;
-
-        #endregion Public Fields
-
-        #region Public Constructors
-
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        #endregion Public Constructors
-
-        #region Public Properties
-
-        public int idleTime { get; set; } = 0;
-
-        public bool IsOnPC => idleTime <= (60 * minutos);
-
-        public bool IsRunRunPaused { get; set; } = true;
-
-        #endregion Public Properties
-
-        #region Public Methods
-
         public void OnIdle()
         {
             if (IsOnPC == false && IsRunRunPaused == false)
@@ -280,12 +248,10 @@ namespace StopstopIt
                 if (idleTime == 0)
                 {
                     this.Text = $"RunRun.it";
-
                 }
                 else
                 {
                     this.Text = $"RunRun.it - Pausando em {minutos * 60 - idleTime} segundos";
-
                 }
             }
 
@@ -309,13 +275,21 @@ namespace StopstopIt
 
             if (e.Reason == SessionSwitchReason.SessionLogoff)
             {
-                SystemEvents.SessionSwitch -= SystemEvents_SessionSwitch;
-
-                Application.Exit();
-                System.Environment.Exit(1);
+                sair();
             }
         }
 
-        #endregion Public Methods
+        [StructLayout(LayoutKind.Sequential)]
+        private struct LASTINPUTINFO
+        {
+            public static readonly int SizeOf =
+                   Marshal.SizeOf(typeof(LASTINPUTINFO));
+
+            [MarshalAs(UnmanagedType.U4)]
+            public int cbSize;
+
+            [MarshalAs(UnmanagedType.U4)]
+            public int dwTime;
+        }
     }
 }

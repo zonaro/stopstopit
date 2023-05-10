@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\H&S\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\H&S\\.nuget\\packages",
+      "C:\\Users\\zonar\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\zonar\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {
